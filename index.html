@@ -10,51 +10,35 @@
 </head>
 <body>
     <div id="cv-form">
-    <h2 class="mx-5" style="color: black;">Resume Maker</h2>
-    <hr style="color: black;">
+    <h2 class="mx-5" style="color: aliceblue;">Resume Maker</h2>
+    <hr style="color: aliceblue;">
         <h1 class="text-center hed">Personal details</h1>
-        
+
         <div class="container">
            <div class="row my-5">
                <div class="col-md"></div>
                <div class="col-md-10 card d-flex align-items-stretch shadow p-3 mb-5 bg-white rounded">
                    <div class="container">
-                       <h5 style="font-weight: 700; color: black;">Personal details</h5>
+                       <h5 style="font-weight: 700;">Personal details</h5>
                    </div>
                    <hr>
+                
                    <div class="row">
                        <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">Your name*</label>
-                            <input type="text" id="nameField" placeholder="Enter here" class="form-control" required>
-                            <div class="invalid-feedback">
-                                Please enter your name.
-                              </div>
+                            <input type="text" id="nameField" placeholder="Enter here" class="form-control">
                         </div>
                     </div>
                        <div class="col-md-7">
                         <div class="form-group mt-2">
                             <label for="Contact">Your Contact</label>
-                            <input type="text" id="contactField" placeholder="Enter here" class="form-control" required>
-                            <div class="invalid-feedback">
-                                Please enter your contact.
-                              </div>
+                            <input type="text" id="contactField" placeholder="Enter here" class="form-control">
                         </div>
                        </div>
                        <div class="form-group mt-2">
                         <label for="address">Your Address</label>
-                        <textarea id="addressField" placeholder="Enter here" class="form-control" rows="3" required></textarea>
-                        <div class="invalid-feedback">
-                            Please enter your address.
-                          </div>
-                    </div>
-                    
-                    <div class="form-group mt-3">
-                        <label for="">Select your photo*</label>
-                        <input id="imgField"type="file" class="form-control" required>
-                        <div class="invalid-feedback">
-                            Please upload your image.
-                          </div>
+                        <textarea id="addressField" placeholder="Enter here" class="form-control" rows="3"></textarea>
                     </div>
                     <p class="text-secondary my-2">Important Links</p>
                 <div class="form-group">
@@ -83,6 +67,7 @@
                     <h5 style="font-weight: 700;">Professional details</h5>
                 </div>
                 <hr>
+             
                 <div class="row">
                     <div class="col">
                         <div class="accordion" id="accordionExample">
@@ -97,11 +82,8 @@
                                 <div class="accordion-body">
                                     <div class="form-group mt-2">
                                         <label for="">Objective</label>
-                                        <textarea placeholder="Enter here" class="form-control" rows="4" id="ObjectiveField" required></textarea>
-                                        <div class="invalid-feedback">
-                                            Please enter objective.
-                                          </div>
-                                </div>
+                                        <textarea placeholder="Enter here" class="form-control" rows="4" id="ObjectiveField"></textarea>
+                                    </div>
                                 </div>
                               </div>    
                             </div>
@@ -113,16 +95,14 @@
                                 Work Experience
                               </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
                                 <div class="form-group mt-2" id="we">
                                     <label for="">Work Experience</label>
-                                    <textarea placeholder="Enter here" class="form-control weField" rows="3" required></textarea>
-                                    <div class="invalid-feedback">
-                                        Please enter work experience or write no experience.
-                                      </div>
+                                    <textarea placeholder="Enter here" class="form-control weField" rows="3"></textarea>
+                                
                                 <div class="container text-center mt-2" id="weAddButon">
-                                    <button onclick= "addnewWEField()"class="btn btn-dark btn-sm">Add   +</button>
+                                    <button onclick= "addnewWEField()"class="btn btn-dark">Add</button>
                                 </div>
                                 </div>
                               </div>
@@ -135,48 +115,45 @@
                                 Academic Qualification
                               </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
                                 <div class="form-group mt-2" id="aq">
                                     <label for="">Academic Qualification</label>
-                                    <textarea placeholder="Enter here" class="form-control aqField" rows="3" required></textarea>
-                                    <div class="invalid-feedback">
-                                        Please enter Academic Qualification.
-                                      </div>
+                                    <textarea placeholder="Enter here" class="form-control aqField" rows="3"></textarea>
+                                
                                 <div class="container text-center mt-2" id="aqAddButon">
-                                    <button onclick="addnewAQField()"class="btn btn-dark btn-sm">Add   +</button>
+                                    <button onclick="addnewAQField()"class="btn btn-dark">Add</button>
                                 </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                    </div> 
+                    </div>
                 </div>
-         </div>
+             
+             </div>
             <div class="col-md"></div>
 
         </div>
-        <div class="container text-center">
-            <button onclick= "generateCV()"class="btn btn-dark btn-lg" type="submit">Generate CV</button>   
+        <div class="container text-center mt-3">
+            <button onclick= "generateCV()"class="btn btn-dark btn-lg">Generate CV</button>   
            </div>
         </div>
-        
     </div> 
     <div class="container"id="cv-template">
         <div class="row">
             <div class="col-md-4 text-center py-5 background">
                 <!-- first column -->
-                <img id ="imgT"src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="profile-image" class="img-fluid my-img"
-                style="width: 200px; height: 200px; border-radius: 50%;">
+                <img src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="profile-image" class="img-fluid my-img">
                 <div class="container">
                     <p id="nameT1">Janvi Chauhan</p>
                     <p id="contactT">+911234567890</p>
                     <p id="addressT">nanpura, gopipura, surat, Gujarat, India </p>
                 </div>
                 <hr />
-                <p><a href="#" id="fbT">https://www.facebook.com/janvi</a></p>
-                <p><a href="#" id="inT">https://www.instagram.com/janvi</a></p>
-                <p><a href="#" id="lnT">https://www.linkedin.com/janvi</a></p>
+                <p id="fbT"><a href="#">www.facebook.com/janvi</a></p>
+                <p id="inT"><a href="#">www.instagram.com/janvi</a></p>
+                <p id="lnT"><a href="#">www.linkedin.com/janvi</a></p>
     
             </div>
             <div class="col-md-8 py-5 ">
@@ -241,8 +218,7 @@
                     window.saveAs(blob,"cv.png")
                 })
             })
-        });       
-
+        })
     </script>
 </body>
 </html>

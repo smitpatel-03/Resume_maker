@@ -55,21 +55,8 @@ function generateCV(){
 
     document.getElementById("aqT").innerHTML = str2;
 
-    let file = document.getElementById('imgField').files[0];
-    console.log(file);
-    let reader = new FileReader();
-
-    reader.readAsDataURL(file);
-    
-    console.log(reader.result);
-
-    reader.onloadend = function(){
-        document.getElementById("imgT").src = reader.result;
-    }
-
     document.getElementById("cv-form").style.display="none";
     document.getElementById("cv-template").style.display="block";
     document.getElementById("dow").style.display="block";
     document.getElementById('cv-form').style.backgroundImage="";
 }
-

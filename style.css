@@ -3,7 +3,7 @@
 }
 
 .hed{
-    color: black;
+    color: aliceblue;
     margin-top: 50px;
     font-weight: 700;
 }
@@ -32,4 +32,3 @@
 #dow{
     display: none;
 }
-
